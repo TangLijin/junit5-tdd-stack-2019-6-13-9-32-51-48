@@ -1,9 +1,6 @@
 package com.thoughtworks.tdd;
 
-public class Dependency {
-    public String say(){
-        return "Leave me alone.";
-    }
+public class Game {
 
     public String fizzBuzz(int i) {
         String result = "";
@@ -20,11 +17,13 @@ public class Dependency {
         if (i % 7 == 0) {
             result += "Whizz";
         }
+        if(result.length() > 0){
+            return result;
+        }
         if (result == "") {
             result += i;
         }
         return result;
 
     }
-
 }
